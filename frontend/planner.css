@@ -324,3 +324,43 @@ html, body { height: 100%; overflow: hidden; background: var(--bg); color: var(-
   cursor: pointer; font-size: 0.9rem; transition: background .2s;
 }
 .chat-input-area button:hover { background: #486aff; }
+
+@media (max-width: 768px) {
+
+  body {
+    overflow-x: hidden;
+  }
+
+  .planner-container {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .sidebar-left,
+  .sidebar-right {
+    width: 100%;
+    max-width: 100%;
+    position: relative;
+  }
+
+  .canvas-container,
+  canvas {
+    width: 100% !important;
+    height: 60vh !important;
+  }
+
+  .top-toolbar {
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  button {
+    font-size: 14px;
+    padding: 8px 10px;
+  }
+
+  .furniture-list {
+    max-height: 250px;
+    overflow-y: auto;
+  }
+}
